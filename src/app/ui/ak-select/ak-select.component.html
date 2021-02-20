@@ -1,0 +1,8 @@
+<div class="custom-select">
+  <select (change)="selectionChanged($event)">
+    <option disabled selected>Select Singer</option>
+    <option *ngFor="let option of data" [value]="option.id">
+      {{ option.displayVal }}
+    </option>
+  </select>
+</div>

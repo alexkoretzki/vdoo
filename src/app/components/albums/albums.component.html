@@ -1,0 +1,4 @@
+<app-ak-select
+  [data]="albums$ | async"
+  (dropdownSelectionChanged)="albumSelected($event)"
+></app-ak-select>
